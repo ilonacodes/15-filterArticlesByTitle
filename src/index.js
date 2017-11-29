@@ -1,14 +1,14 @@
 function filterByTitle () {
-    var input = document.getElementById('search');
+    var input = document.querySelector('#search');
     var filter = input.value.toLowerCase();
-    var titles = document.getElementsByTagName('h2')[0];
+    var articles = document.querySelectorAll('article');
 
-    for (var i = 0; i < titles.length; i++) {
-        var p = titles[i].getElementsByTagName('p')[0];
-        if (p.innerHTML.toLowerCase().indexOf(filter) > -1) {
-            titles[i].style.display = '';
+    for (var i = 0; i < articles.length; i++) {
+        var title = articles[i].querySelector('.title');
+        if (title.innerText.toLowerCase().indexOf(filter) > -1) {
+            articles[i].style.display = '';
         } else {
-            titles[i].style.display = 'none';
+            articles[i].style.display = 'none';
         }
     }
 }
