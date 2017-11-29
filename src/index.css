@@ -7,19 +7,31 @@ body, h2, p {
 }
 
 .search-container {
+    width: 100%;
     padding: 1.25rem;
-    background-color: black;
+    background-color: #333;
     position: fixed;
     top: 0;
-    right: 45%;
 }
 
+input {
+    /*margin-left: 6.5rem;*/
+    margin-left: 8%;
+    width: 20%;
+    height: 25px;
+    padding-left: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 0;
+}
+
+
 .filter .select {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .content {
-    padding: 4rem 10%;
+    padding: 6rem 10%;
     text-align: justify;
 }
 
